@@ -1,16 +1,16 @@
 import PropTypes from "prop-types";
 
-const Child = ({ count }) => {
+const ChildConst = ({ count }) => {
   return (
     <div>
-      ChildComponent
+      Child Const Component
       <br />
       ParentCount: {count}
     </div>
   );
 };
-Child.propTypes = {
+ChildConst.propTypes = {
   count: PropTypes.number.isRequired,
 };
 
-export default Child;
+export default ChildConst;

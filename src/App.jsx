@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import Child from "./components/Child";
+import ChildConst from "./components/ChildConst";
+import ChildFunction from "./components/ChildFunction";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,7 +20,8 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <Child count={count} />
+      <ChildConst count={count} />
+      <ChildFunction count={count} />
     </>
   );
 }

@@ -1,5 +1,9 @@
 import PropTypes from "prop-types";
 
+ChildConst.propTypes = {
+  count: PropTypes.number.isRequired,
+};
+
 const ChildConst = ({ count }) => {
   return (
     <div>
@@ -8,9 +12,6 @@ const ChildConst = ({ count }) => {
       ParentCount: {count}
     </div>
   );
-};
-ChildConst.propTypes = {
-  count: PropTypes.number.isRequired,
 };
 
 export default ChildConst;
